@@ -1,4 +1,3 @@
-
 import { ConversationChain } from 'langchain/chains';
 import { ChatOpenAI } from 'langchain/chat_models/openai';
 import type { BaseMemory } from 'langchain/memory';
@@ -42,5 +41,3 @@ export const msgUsecase = async (msg: string) => {
   //返答確認
   console.log(response);
 };
-
-
