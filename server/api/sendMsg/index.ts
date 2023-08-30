@@ -1,5 +1,5 @@
-// export type Methods = {
-//   post: {
-//     reqBody: { msg: string };
-//   };
-// };
+export type Methods = {
+  post: {
+    reqBody: { msg: string };
+  };
+};
