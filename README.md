@@ -1,69 +1,34 @@
-# Next frourio starter
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-フロントエンドは src ディレクトリの [Next.js](https://nextjs.org/) 、バックエンドは server ディレクトリの [frourio](https://frourio.com/) で構築された TypeScript で一気通貫開発が可能なモノレポサービス
+## Getting Started
 
-最新のコミットによるデモ - https://solufa.github.io/next-frourio-starter/
+First, run the development server:
 
-## 開発手順
-
-### Node.js のインストール
-
-ローカルマシンに直接インストールする
-
-https://nodejs.org/ja/ の左ボタン、LTS をダウンロードしてインストール
-
-### リポジトリのクローンと npm モジュールのインストール
-
-ルートとフロントとバックエンドそれぞれに package.json があるので 3 回インストールが必要
-
-```sh
-$ npm i
-$ npm i --prefix client
-$ npm i --prefix server
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
 ```
 
-### 環境変数ファイルの作成
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```sh
-$ cp client/.env.example client/.env
-$ cp server/.env.example server/.env
-$ cp docker/dev/.env.example docker/dev/.env
-$ cp server/prisma/.env.example server/prisma/.env
-```
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### ミドルウェアのセットアップ
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-```sh
-$ docker-compose up -d
-```
+## Learn More
 
-### 開発サーバー起動
+To learn more about Next.js, take a look at the following resources:
 
-次回以降は以下のコマンドだけで開発できる
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-```sh
-$ npm run notios
-```
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-Web ブラウザで http://localhost:3000 を開く
+## Deploy on Vercel
 
-開発時のターミナル表示は [notios](https://github.com/frouriojs/notios) で制御している
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-[Node.js モノレポ開発のターミナルログ混雑解消のための新作 CLI ツール notios](https://zenn.dev/luma/articles/nodejs-new-cli-tool-notios)
-
-閉じるときは `Ctrl + C` を 2 回連続で入力
-
-#### Firebase Emulator
-
-http://localhost:4000/auth
-
-#### MinIO Console
-
-http://localhost:9001/
-
-#### PostgreSQL UI
-
-```sh
-$ cd server
-$ npx prisma studio
-```
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
